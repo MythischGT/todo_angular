@@ -64,7 +64,7 @@ npm install -g @angular/cli
 
 ```bash
 git clone https://github.com/MythischGT/todo_angular.git
-cd todo-app
+cd todo_angular
 ```
 
 2. **Install dependencies**
