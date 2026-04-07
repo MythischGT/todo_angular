@@ -1,59 +1,130 @@
-# TodoApp
+# ✅ Angular ToDo App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
+> Part of the **Angular Learning Series** — a hands-on journey through Angular fundamentals, one project at a time.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📖 About
+
+This is a simple, fully functional **ToDo application** built with Angular. It was created as part of my personal Angular Learning Series to practice and demonstrate core Angular concepts in a practical setting.
+
+---
+
+## 🎯 Learning Objectives
+
+This project covers the following Angular fundamentals:
+
+- **Components** — Creating and structuring reusable UI components
+- **Data Binding** — One-way and two-way binding with `[(ngModel)]`
+- **Directives** — Using built-in directives like `*ngFor` and `*ngIf`
+- **Event Handling** — Responding to user interactions with `(click)` and `(keyup)`
+- **Services & Dependency Injection** — Managing shared state through a `TodoService`
+- **TypeScript Interfaces** — Modeling data with typed interfaces
+- **Component Communication** — Passing data with `@Input()` and `@Output()`
+
+---
+
+## 🚀 Features
+
+- ➕ Add new tasks
+- ✔️ Mark tasks as complete / incomplete
+- 🗑️ Delete tasks
+- 📋 Filter tasks by status (All / Active / Completed)
+- 💾 Persistent storage via `localStorage`
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Version |
+|---|---|
+| Angular | 17+ |
+| TypeScript | 5+ |
+| Angular CLI | 17+ |
+| Node.js | 18+ |
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Angular CLI](https://angular.io/cli)
+
+```bash
+npm install -g @angular/cli
+```
+
+### Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/MythischGT/todo_angular.git
+cd todo-app
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Run the development server**
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. Open your browser and navigate to `http://localhost:4200`
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📁 Project Structure
 
-```bash
-ng generate component component-name
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── todo-list/        # Renders the list of todo items
+│   │   ├── todo-item/        # Individual todo item component
+│   │   └── todo-form/        # Input form for adding new tasks
+│   ├── models/
+│   │   └── todo.model.ts     # Todo interface definition
+│   ├── services/
+│   │   └── todo.service.ts   # Business logic & state management
+│   ├── app.component.ts
+│   └── app.module.ts
+└── ...
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📚 Angular Learning Series
 
-## Building
+This project is part of a series of projects I'm building to learn Angular progressively:
 
-To build the project run:
+| # | Project | Topics Covered |
+|---|---|---|
+| 1 | **ToDo App** ← *you are here* | Components, Directives, Services, Data Binding |
+| 2 | Coming soon... | Routing, Guards, Lazy Loading |
+| 3 | Coming soon... | HTTP Client, RxJS, Observables |
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🤝 Contributing
 
-## Running unit tests
+This is a personal learning project, but feedback and suggestions are always welcome! Feel free to open an issue if you spot something or have ideas for improvement.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 📄 License
 
-## Running end-to-end tests
+This project is open source and available under the [MIT License](LICENSE).
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> *Learning Angular, one commit at a time.* 🚀
